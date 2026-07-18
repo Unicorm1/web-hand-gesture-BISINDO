@@ -6,8 +6,9 @@ import streamlit as st
 from collections import deque, Counter
 from streamlit_webrtc import webrtc_streamer, VideoProcessorBase
 from tensorflow.keras.models import load_model
-import mediapipe.python.solutions.hands as mp_hands
-import mediapipe.python.solutions.drawing_utils as mp_drawing
+import mediapipe as mp
+mp_hands = mp.solutions.hands
+mp_drawing = mp.solutions.drawing_utils
 
 # Konfigurasi Halaman Streamlit
 st.set_page_config(page_title="Penerjemah BISINDO", page_icon="🤟")

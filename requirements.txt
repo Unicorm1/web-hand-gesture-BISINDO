@@ -5,3 +5,4 @@ mediapipe==0.10.9
 tensorflow-cpu
 scikit-learn
 av
+numpy==1.26.4

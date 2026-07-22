@@ -94,5 +94,7 @@ class BisindoProcessor(VideoProcessorBase):
 webrtc_streamer(
     key="bisindo-kamera", 
     video_processor_factory=BisindoProcessor,
-    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
+    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+    # TAMBAHKAN BARIS DI BAWAH INI: Mematikan audio dan hanya meminta video
+    media_stream_constraints={"video": True, "audio": False}
 )
